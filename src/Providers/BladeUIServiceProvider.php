@@ -1,8 +1,8 @@
 <?php
 
 
-use BladeUi\Facades\{BladeUIDirectives};
-use BladeUi\Facades\BladeUI;
+use BladeUI\Facades\{BladeUIDirectives};
+use BladeUI\Facades\BladeUI;
 use Illuminate\Foundation\{AliasLoader, Application};
 use Illuminate\Support\{ServiceProvider, Str};
 use Illuminate\Support\Facades\Blade;
