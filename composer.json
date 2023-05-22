@@ -35,12 +35,21 @@
     "allow-plugins": {
       "pestphp/pest-plugin": true
     }
-  },"extra": {
-  "laravel": {
-    "providers": [
-      "BladeUI\\Providers\\BladeUIServiceProvider"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "BladeUI\\Providers\\BladeUIServiceProvider"
+      ],
+      "aliases": []
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "./vendor/bin/dusk-updater detect --no-interaction"
     ],
-    "aliases": []
+    "test": "./vendor/bin/pest",
+    "test:ci": "CI=true ./vendor/bin/pest",
+    "phpcs": "./vendor/bin/php-cs-fixer fix"
   }
-}
 }
