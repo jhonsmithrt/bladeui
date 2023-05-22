@@ -43,7 +43,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "BladeUI\\Providers\\BladeUIServiceProvider"
+        "blade_ui\\Providers\\BladeUIServiceProvider"
       ],
       "aliases": []
     }
