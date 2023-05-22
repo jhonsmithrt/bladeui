@@ -1,6 +1,6 @@
 <?php
 
-namespace WireUi\Support;
+namespace BladeUI\Support;
 
 use Exception;
 use Illuminate\Support\Facades\Blade;
