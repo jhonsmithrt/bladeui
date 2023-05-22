@@ -1,7 +1,8 @@
 {
   "name": "jhonsmithrt/blade_ui",
   "description": "description",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "license": "MIT",
   "type": "library",
   "keywords": [
@@ -38,11 +39,7 @@
       "BladeUi\\": "src/"
     }
   },
-  "config": {
-    "allow-plugins": {
-      "pestphp/pest-plugin": true
-    }
-  },
+
   "extra": {
     "laravel": {
       "providers": [
@@ -51,12 +48,5 @@
       "aliases": []
     }
   },
-  "scripts": {
-    "post-autoload-dump": [
-      "./vendor/bin/dusk-updater detect --no-interaction"
-    ],
-    "test": "./vendor/bin/pest",
-    "test:ci": "CI=true ./vendor/bin/pest",
-    "phpcs": "./vendor/bin/php-cs-fixer fix"
-  }
+
 }
