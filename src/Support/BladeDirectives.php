@@ -10,7 +10,7 @@ class BladeDirectives
 {
     public function scripts(bool $absolute = true, array $attributes = []): string
     {
-        $route = route('baldeui.assets.scripts', $parameters = [], $absolute);
+        $route = route('bladeui.assets.scripts', $parameters = [], $absolute);
         $this->getManifestVersion('bladeui.js', $route);
 
         $attributes = new ComponentAttributeBag($attributes);
