@@ -1,5 +1,5 @@
 <?php
-namespace BladeUi;
+namespace BladeUI;
 use BladeUi\Support\{BladeDirectives, ComponentResolver};
 class BladeUI
 {
