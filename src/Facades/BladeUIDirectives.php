@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeUi\Facades;
+namespace BladeUI\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use BladeUI\Support\BladeDirectives;
