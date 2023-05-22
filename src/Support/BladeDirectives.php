@@ -2,7 +2,7 @@
 
 namespace BladeUI\Support;
 
-use BladeUi\Actions\Minify;
+use BladeUI\Actions\Minify;
 use Illuminate\Support\Str;
 use Illuminate\View\ComponentAttributeBag;
 
