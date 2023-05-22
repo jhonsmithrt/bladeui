@@ -1,12 +1,20 @@
 {
   "name": "jhonsmithrt/blade_ui",
-  "description": "TallStack components",
-  "type": "library",
+  "description": "description",
+  "minimum-stability": "stable",
   "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "livewire components",
+    "livewire-ui",
+    "wireui",
+    "laravel components",
+    "blade components"
+  ],
   "authors": [
     {
-      "name": "Jhon Smith",
-      "email": "jhons4681@gmail.com"
+      "name": "Jhon",
+      "email": "jsrtantalean@gmail.com"
     }
   ],
   "require": {
