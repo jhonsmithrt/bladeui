@@ -36,14 +36,14 @@
   },
   "autoload": {
     "psr-4": {
-      "BladeUi\\": "src/"
+      "BladeUI\\": "src/"
     }
   },
 
   "extra": {
     "laravel": {
       "providers": [
-        "blade_ui\\Providers\\BladeUIServiceProvider"
+        "BladeUI\\Providers\\BladeUIServiceProvider"
       ],
       "aliases": []
     }
