@@ -1,8 +1,7 @@
 <?php
-
 namespace BladeUI\View\Components;
 
-class Button extends BaseButton
+class Button extends \BladeUI\View\Components\BaseButton
 {
     public function outlineColors(): array
     {
