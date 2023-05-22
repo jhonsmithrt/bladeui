@@ -1,6 +1,5 @@
 {
   "name": "jhonsmithrt/blade_ui",
-  "minimum-stability": "dev",
   "description": "TallStack components",
   "type": "library",
   "license": "MIT",
