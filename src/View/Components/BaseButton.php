@@ -15,7 +15,7 @@ abstract class BaseButton extends Component
         public bool $outline = false,
         public bool $flat = false,
         public bool $full = false,
-        public ?string $color = "blue",
+        public ?string $color = null,
         public ?string $size = null,
         public ?string $label = null,
         public ?string $icon = null,
