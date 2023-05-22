@@ -5,7 +5,7 @@ namespace BladeUI\Http\Requests;
 use BladeUI\Facades\BladeUI;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use WireUi\View\Components\BaseButton;
+use BladeUI\View\Components\BaseButton;
 
 class ButtonRequest extends FormRequest
 {
