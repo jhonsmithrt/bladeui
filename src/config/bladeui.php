@@ -13,5 +13,9 @@ return [
             'class' => Components\Icons\Spinner::class,
             'alias' => 'icon.spinner',
         ],
+        'button' => [
+            'class' => Components\Button::class,
+            'alias' => 'button',
+        ],
     ]
 ];
