@@ -1,5 +1,6 @@
 <?php
 
+namespace BladeUi\Providers;
 
 use BladeUI\Facades\{BladeUIDirectives};
 use BladeUI\Facades\BladeUI;
