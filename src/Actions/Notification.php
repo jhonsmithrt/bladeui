@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeUi\Actions;
+namespace BladeUI\Actions;
 
 class Notification extends Actionable
 {
