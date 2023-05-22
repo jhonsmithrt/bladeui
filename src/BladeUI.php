@@ -1,6 +1,6 @@
 <?php
 namespace BladeUI;
-use BladeUi\Support\{BladeDirectives, ComponentResolver};
+use BladeUI\Support\{BladeDirectives, ComponentResolver};
 class BladeUI
 {
     public function component(string $name): string
