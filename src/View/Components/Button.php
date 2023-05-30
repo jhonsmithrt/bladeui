@@ -1,8 +1,11 @@
 <?php
 namespace bladeui\View\Components;
 
+use bladeui\Traits\ColorDefault;
+
 class Button extends BaseButton
 {
+    use ColorDefault;
     public function outlineColors(): array
     {
 
@@ -31,6 +34,7 @@ class Button extends BaseButton
                 ring-$this->color-600 text-$this->color-600 hover:bg-$this->color-100
                 dark:ring-offset-slate-800 dark:hover:bg-slate-700 dark:ring-$this->color-700
             EOT,
+            $this->ButtonColor
         ];
     }
 
