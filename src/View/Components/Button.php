@@ -1,8 +1,6 @@
 <?php
 namespace bladeui\View\Components;
 
-
-
 use bladeui\Traits\ColorsDefault;
 
 class Button extends BaseButton
@@ -18,7 +16,7 @@ class Button extends BaseButton
             EOT,
 
             $this->color => <<<EOT
-                ring-$this->color-500 text-$this->color-500 border border-$this->color-500 hover:bg-$this->color-50
+                ring-$this->color-500 text-$this->color-500 border border-$this->color-500 hover:bg-$this->color-500
                 dark:ring-offset-slate-800 dark:hover:bg-slate-700
             EOT,
         ];
@@ -41,7 +39,7 @@ class Button extends BaseButton
 
     public function defaultColors(): array
     {
-        if($this->color){
+        if($this->customcolor){
             return [
                 self::DEFAULT => <<<EOT
                 border text-black hover:bg-slate-700 ring-slate-200 bg-slate-300
@@ -50,14 +48,10 @@ class Button extends BaseButton
                 ring-$this->color-500 text-white bg-$this->color-500 hover:bg-$this->color-900 hover:ring-$this->color-900
             EOT,
             ];
-        }else{
-            return [
-                self::DEFAULT => <<<EOT
-                border text-black hover:bg-slate-700 ring-slate-200 bg-slate-300
-            EOT,
-               $this->colorButton
-            ];
+
         }
+        return $this->colorButton;
+
     }
 
     public function sizes(): array

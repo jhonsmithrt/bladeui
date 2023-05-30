@@ -5,6 +5,9 @@ namespace bladeui\Traits;
 trait ColorsDefault
 {
     protected $colorButton = [
+        self::DEFAULT => <<<EOT
+                border text-black hover:bg-slate-700 ring-slate-200 bg-slate-300
+            EOT,
         'primary' => <<<EOT
                 ring-primary-500 text-white bg-primary-500 hover:bg-primary-600 hover:ring-primary-600
                 dark:ring-offset-slate-800 dark:bg-primary-700 dark:ring-primary-700
