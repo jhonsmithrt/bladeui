@@ -40,7 +40,7 @@ class Button extends BaseButton
     {
         return [
             self::DEFAULT => <<<EOT
-                border text-slate-500 hover:bg-slate-100 ring-slate-200 bg-slate-300
+                border text-black hover:bg-slate-700 ring-slate-200 bg-slate-300
             EOT,
 
             $this->color => <<<EOT
