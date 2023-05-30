@@ -39,17 +39,6 @@ class Button extends BaseButton
 
     public function defaultColors(): array
     {
-        if($this->customcolor){
-            return [
-                self::DEFAULT => <<<EOT
-                border text-black hover:bg-slate-700 ring-slate-200 bg-slate-300
-            EOT,
-                $this->color => <<<EOT
-                ring-$this->color-500 text-white bg-$this->color-500 hover:bg-$this->color-900 hover:ring-$this->color-900
-            EOT,
-            ];
-
-        }
         return $this->colorButton;
 
     }
