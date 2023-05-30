@@ -40,15 +40,11 @@ class Button extends BaseButton
     {
         return [
             self::DEFAULT => <<<EOT
-                border text-slate-500 hover:bg-slate-100 ring-slate-200
-                dark:ring-slate-600 dark:border-slate-500 dark:hover:bg-slate-700
-                dark:ring-offset-slate-800 dark:text-slate-400
+                border text-slate-500 hover:bg-slate-100 ring-slate-200 bg-slate-300
             EOT,
 
             $this->color => <<<EOT
-                ring-$this->color-500 text-white bg-$this->color-500 hover:bg-$this->color-600 hover:ring-$this->color-600
-                dark:ring-offset-slate-800 dark:bg-$this->color-700 dark:ring-$this->color-700
-                dark:hover:bg-$this->color-600 dark:hover:ring-$this->color-600
+                ring-$this->color-500 text-white bg-$this->color-500 hover:bg-$this->color-900 hover:ring-$this->color-900
             EOT,
         ];
     }
