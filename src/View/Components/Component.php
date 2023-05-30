@@ -6,7 +6,7 @@ use Illuminate\View\ComponentAttributeBag;
 
 abstract class Component extends View\Component
 {
-    protected const DEFAULT = 'default';
+    protected const DEFAULT = 'blue';
 
     protected function classes(array $classList): string
     {
