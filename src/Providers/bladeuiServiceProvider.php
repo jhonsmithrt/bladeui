@@ -1,9 +1,9 @@
 <?php
 
-namespace BladeUI\Providers;
+namespace bladeui\Providers;
 
-use BladeUI\Facades\{bladeuiDirectives};
-use BladeUI\Facades\BladeUI;
+use bladeui\Facades\{bladeuiDirectives};
+use bladeui\Facades\bladeui;
 use Illuminate\Foundation\{AliasLoader, Application};
 use Illuminate\Support\{ServiceProvider, Str};
 use Illuminate\Support\Facades\Blade;
@@ -11,12 +11,12 @@ use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\View\ComponentAttributeBag;
 use Livewire\LivewireBladeDirectives;
 use Livewire\WireDirective;
-use BladeUI\Support\bladeuiTagCompiler;
+use bladeui\Support\bladeuiTagCompiler;
 
 /**
  * @property Application $app
  */
-class BladeUIServiceProvider extends ServiceProvider
+class bladeuiServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -29,9 +29,9 @@ class BladeUIServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton('BladeUI', BladeUI::class);
+        $this->app->singleton('bladeui', bladeui::class);
         $loader = AliasLoader::getInstance();
-        $loader->alias('BladeUI', BladeUI::class);
+        $loader->alias('bladeui', bladeui::class);
     }
 
     protected function registerTagCompiler()
