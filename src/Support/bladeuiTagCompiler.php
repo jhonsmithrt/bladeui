@@ -1,11 +1,11 @@
 <?php
 
-namespace BladeUI\Support;
+namespace bladeui\Support;
 
 use Illuminate\View\Compilers\ComponentTagCompiler;
-use BladeUI\Facades\bladeuiDirectives;
+use bladeui\Facades\bladeuiDirectives;
 
-class BladeUITagCompiler extends ComponentTagCompiler
+class bladeuiTagCompiler extends ComponentTagCompiler
 {
     public function compile($value)
     {

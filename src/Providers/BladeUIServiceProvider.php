@@ -11,7 +11,7 @@ use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\View\ComponentAttributeBag;
 use Livewire\LivewireBladeDirectives;
 use Livewire\WireDirective;
-use BladeUI\Support\BladeUITagCompiler;
+use BladeUI\Support\bladeuiTagCompiler;
 
 /**
  * @property Application $app
@@ -37,7 +37,7 @@ class BladeUIServiceProvider extends ServiceProvider
     protected function registerTagCompiler()
     {
         Blade::precompiler(static function (string $string): string {
-            return app(BladeUITagCompiler::class)->compile($string);
+            return app(bladeuiTagCompiler::class)->compile($string);
         });
     }
 
