@@ -3,8 +3,11 @@ namespace bladeui\View\Components;
 
 
 
+use bladeui\Traits\ColorsDefault;
+
 class Button extends BaseButton
 {
+    use ColorsDefault;
     public function outlineColors(): array
     {
 
@@ -38,15 +41,23 @@ class Button extends BaseButton
 
     public function defaultColors(): array
     {
-        return [
-            self::DEFAULT => <<<EOT
+        if($this->color){
+            return [
+                self::DEFAULT => <<<EOT
                 border text-black hover:bg-slate-700 ring-slate-200 bg-slate-300
             EOT,
-
-            $this->color => <<<EOT
+                $this->color => <<<EOT
                 ring-$this->color-500 text-white bg-$this->color-500 hover:bg-$this->color-900 hover:ring-$this->color-900
             EOT,
-        ];
+            ];
+        }else{
+            return [
+                self::DEFAULT => <<<EOT
+                border text-black hover:bg-slate-700 ring-slate-200 bg-slate-300
+            EOT,
+               $this->colorButton
+            ];
+        }
     }
 
     public function sizes(): array
