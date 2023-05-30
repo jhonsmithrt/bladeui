@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeUI\Http\Controllers;
+namespace bladeui\Http\Controllers;
 
 use Illuminate\Http\Response;
 use Illuminate\View\ComponentAttributeBag;

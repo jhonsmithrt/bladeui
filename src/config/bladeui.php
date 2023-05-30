@@ -1,5 +1,5 @@
 <?php
-use BladeUI\View\Components;
+use bladeui\View\Components;
 return [
     'icons' => [
         'style' => env('BLADEUI_ICONS_STYLE', 'outline'),

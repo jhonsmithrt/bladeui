@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeUI\Http\Controllers;
+namespace bladeui\Http\Controllers;
 
 use Illuminate\Support\Facades\View;
 use Symfony\Component\HttpFoundation\Response;

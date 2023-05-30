@@ -1,12 +1,12 @@
 <?php
 
-namespace BladeUI\Http\Controllers;
+namespace bladeui\Http\Controllers;
 
 use Illuminate\Http\Response;
 use Livewire\Controllers\CanPretendToBeAFile;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
-class BladeUIAssetsController extends Controller
+class bladeuiAssetsController extends Controller
 {
     use CanPretendToBeAFile;
 

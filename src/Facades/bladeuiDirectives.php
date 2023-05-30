@@ -1,9 +1,9 @@
 <?php
 
-namespace BladeUI\Facades;
+namespace bladeui\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use BladeUI\Support\BladeDirectives;
+use bladeui\Support\BladeDirectives;
 
 /**
  * @method static string scripts(bool $absolute = true, array $attributes = [])
@@ -14,7 +14,7 @@ use BladeUI\Support\BladeDirectives;
  * @method static string boolean(string $value)
  * @method static string entangleable(string $property, mixed $value = null)
  */
-class BladeUIDirectives extends Facade
+class bladeuiDirectives extends Facade
 {
     protected static function getFacadeAccessor(): string
     {

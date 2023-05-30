@@ -1,5 +1,5 @@
 {
-  "name": "jhonsmithrt/blade_ui",
+  "name": "jhonsmithrt/bladeui",
   "description": "description",
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -8,7 +8,7 @@
   "keywords": [
     "livewire components",
     "livewire-ui",
-    "wireui",
+    "Base wireui",
     "laravel components",
     "blade components"
   ],
@@ -36,14 +36,14 @@
   },
   "autoload": {
     "psr-4": {
-      "BladeUI\\": "src/"
+      "bladeui\\": "src/"
     }
   },
 
   "extra": {
     "laravel": {
       "providers": [
-        "BladeUI\\Providers\\BladeUIServiceProvider"
+        "bladeui\\Providers\\bladeuiServiceProvider"
       ],
       "aliases": []
     }

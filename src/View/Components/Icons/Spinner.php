@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeUI\View\Components\Icons;
+namespace bladeui\View\Components\Icons;
 
 use Illuminate\View\Component;
 

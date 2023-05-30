@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeUI\Actions;
+namespace bladeui\Actions;
 
 use Illuminate\Support\Str;
 

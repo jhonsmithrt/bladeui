@@ -1,16 +1,16 @@
 <?php
 
-namespace BladeUI\Facades;
+namespace bladeui\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use BladeUI\Support\{BladeDirectives, ComponentResolver};
+use bladeui\Support\{BladeDirectives, ComponentResolver};
 
 /**
  * @method static string component(string $name)
  * @method static ComponentResolver components()
  * @method static BladeDirectives directives()
  */
-class BladeUI extends Facade
+class bladeui extends Facade
 {
     protected static function getFacadeAccessor(): string
     {

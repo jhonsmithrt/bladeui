@@ -1,5 +1,5 @@
 <?php
-namespace BladeUI\View\Components;
+namespace bladeui\View\Components;
 
 use Illuminate\View;
 use Illuminate\View\ComponentAttributeBag;

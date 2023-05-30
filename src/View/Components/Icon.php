@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeUI\View\Components;
+namespace bladeui\View\Components;
 use Illuminate\View\Component;
 
 class Icon extends Component

@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeUI\Support;
+namespace bladeui\Support;
 
 use Exception;
 use Illuminate\Support\Facades\Blade;

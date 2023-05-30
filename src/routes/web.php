@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use BladeUI\Http\Controllers\{ButtonController, IconsController, BladeUIAssetsController};
+use bladeui\Http\Controllers\{ButtonController, IconsController, bladeuiAssetsController};
 
 Route::name('bladeui.')->prefix('/bladeui')->group(function () {
     Route::get('icons/{style}/{icon}', IconsController::class)

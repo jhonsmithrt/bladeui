@@ -3,7 +3,7 @@
 namespace BladeUI\Support;
 
 use Illuminate\View\Compilers\ComponentTagCompiler;
-use BladeUI\Facades\BladeUIDirectives;
+use BladeUI\Facades\bladeuiDirectives;
 
 class BladeUITagCompiler extends ComponentTagCompiler
 {
@@ -20,11 +20,11 @@ class BladeUITagCompiler extends ComponentTagCompiler
             $element = '<script>throw new Error("Wrong <bladeui:scripts /> usage. It should be <bladeui:scripts />")</script>';
 
             if ($matches[1] === 'scripts') {
-                $element = BladeUIDirectives::scripts();
+                $element = bladeuiDirectives::scripts();
             }
 
             if ($matches[1] === 'styles') {
-                $element = BladeUIDirectives::styles();
+                $element = bladeuiDirectives::styles();
             }
 
             return $element;

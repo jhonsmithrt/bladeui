@@ -1,8 +1,8 @@
 <?php
 
-namespace BladeUI\Support;
+namespace bladeui\Support;
 
-use BladeUI\Actions\Minify;
+use bladeui\Actions\Minify;
 use Illuminate\Support\Str;
 use Illuminate\View\ComponentAttributeBag;
 

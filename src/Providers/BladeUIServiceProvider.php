@@ -2,7 +2,7 @@
 
 namespace BladeUI\Providers;
 
-use BladeUI\Facades\{BladeUIDirectives};
+use BladeUI\Facades\{bladeuiDirectives};
 use BladeUI\Facades\BladeUI;
 use Illuminate\Foundation\{AliasLoader, Application};
 use Illuminate\Support\{ServiceProvider, Str};
@@ -69,11 +69,11 @@ class BladeUIServiceProvider extends ServiceProvider
     protected function registerBladeDirectives(): void
     {
         Blade::directive('confirmAction', static function (string $expression): string {
-            return BladeUIDirectives::confirmAction($expression);
+            return bladeuiDirectives::confirmAction($expression);
         });
 
         Blade::directive('notify', static function (string $expression): string {
-            return BladeUIDirectives::notify($expression);
+            return bladeuiDirectives::notify($expression);
         });
 
         Blade::directive('BladeUIScripts', static function (?string $attributes = ''): string {
@@ -85,11 +85,11 @@ class BladeUIServiceProvider extends ServiceProvider
         });
 
         Blade::directive('BladeUIStyles', static function (): string {
-            return BladeUIDirectives::styles();
+            return bladeuiDirectives::styles();
         });
 
         Blade::directive('boolean', static function ($value): string {
-            return BladeUIDirectives::boolean($value);
+            return bladeuiDirectives::boolean($value);
         });
 
         Blade::directive('toJs', static function ($expression): string {
@@ -97,7 +97,7 @@ class BladeUIServiceProvider extends ServiceProvider
         });
 
         Blade::directive('entangleable', static function ($value): string {
-            return BladeUIDirectives::entangleable($value);
+            return bladeuiDirectives::entangleable($value);
         });
     }
 
